@@ -162,9 +162,11 @@ body{
 	margin-top: 50px;
 }
 
-.advantage-button {
+.red-button {
 	background-color: #e11a27;
 }
+
+
 
 
 .price-table .column{
@@ -328,3 +330,123 @@ body{
 }
 
 
+
+/*** Terms Payments ***/
+
+
+.terms-table .column{
+	padding: 0;
+	margin: 0;
+}
+
+.terms-table .column .item {
+	border: none;
+	border-radius: 10px;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;	
+	background-color: green;
+}
+
+.terms-table .left-column .item{
+	margin-right: 20px;
+}
+.terms-table .center-column .item{
+	margin: 0 20px;
+}
+.terms-table .right-column .item {
+	margin-left: 20px;
+}
+
+.terms-table .item .terms-table-head {
+	text-transform: uppercase;
+	font-size: 25px;
+	background-color: #ffd200;
+	width: 100%;
+	padding: 10px 0 1px;
+	text-align: center;
+}
+.terms-table .item .terms-table-head span {
+	font-size: 36px;
+}
+
+.terms-table .terms-table-body {
+	background-color: #f7f0e6;
+	height: 100%;
+	font-weight: bold;
+	padding: 25px 35px;
+}
+.terms-table .terms-table-body .red-text{
+	color: #e11a27;
+	font-weight: 900;
+}
+
+.terms-table .terms-table-body p {
+	margin: 0 0 10px;
+}
+
+.terms-table .terms-table-body ul li {
+	line-height: 30px;
+}
+
+.terms-section .container button {
+	margin: 75px auto;
+}
+
+
+
+
+
+/*** Footer section ***/
+.footer-section {
+	background-color: #ffd200;
+}
+
+.footer-section .footer div{
+	background-color: red;
+	padding: 0;
+}
+
+
+.footer-section .footer div ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-section .footer .social-connect ul{
+	float: right;
+}
+
+
+ 
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*[class*="col-"] {
+        width: 100%;
+    }*/
+
+
+	.price-table .column {
+		margin: 20px 0;
+	}
+
+	.price-table .column .item{
+		margin: 0;
+	}
+
+
+	.terms-table .column {
+		margin: 20px 0;
+	}
+
+	.terms-table .column .item{
+		margin: 0;
+	}
+}
