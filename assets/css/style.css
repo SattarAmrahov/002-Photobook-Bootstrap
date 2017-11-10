@@ -4,6 +4,11 @@ body{
 	font-family: 'Lato', sans-serif;
 }	
 
+
+.button {
+    cursor: pointer;
+}
+
 .navbar-toggler {
     border:none;
 }
@@ -36,17 +41,22 @@ body{
 .navbar-brand {
 	margin: 0;
 	padding: 0;
-	float: left;
+    display: inline-block;
 }
 
 #logo {
-	vertical-align: baseline;
+    display: inline-block;
+}
+
+.phone{
+    text-align: right;
 }
 
 .phone-num {
 	padding: 5px 20px;
 	background-color: #ffd200;
 	border-radius: 8px;
+    display: inline-block;
 }
 
 .phone-num p{
@@ -56,10 +66,12 @@ body{
 	line-height: 18px;
 }
 
-.login img {
-	margin-left: 55px;
+.phone .phone-num {
+    margin-right: 15px;
 }
-
+#xs-phone-num {
+    display: none;
+}
 
 .main-banner {
 	background: url("../img/main-banner.jpg");
@@ -127,6 +139,7 @@ body{
 .section-two .item .image img{
 	position: relative;
 	margin: 30% 20%;
+    width: 50%;
 }
 
 .main-section {
@@ -402,9 +415,15 @@ body{
 	background-color: #ffd200;
 }
 
-.footer-section .footer div{
-	background-color: red;
+.footer-section .footer div {
 	padding: 0;
+}
+
+.footer-section .container .footer .item {
+    width: 50%;
+    border-top: 1px solid #000;
+    padding-top: 25px;
+    line-height: 30px;
 }
 
 
@@ -413,17 +432,80 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.footer-section .footer div ul a{
+    color: #000;
+}
 
-.footer-section .footer .social-connect ul{
+.footer-section .footer .social-connect .item{
 	float: right;
 }
 
+.footer-section .footer .social-connect .item a{
+    color: #000;
+	margin-right: 5px;
+}
+.footer-section .footer .social-connect .item a i{
+    font-size: 1.5em;
+}
 
- 
+
+.copyright {
+    margin-top: 50px;
+}
 
 
 
 
+@media only screen and (max-width: 576px) {
+  
+    
+    .navbar .menu{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+         optional 
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+      }
+    .navbar .menu button{
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+      }
+    .navbar .menu a {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        margin-left: 15px;
+      }
+
+  .navbar .phone .phone-num{
+        display: none;
+    }
+    #xs-phone-num{
+         display: table;
+        margin-top: 20px;
+    }
+    
+  .navbar .menu, .navbar .phone {
+        width: 50%;
+    }  
+    
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -431,6 +513,7 @@ body{
     /*[class*="col-"] {
         width: 100%;
     }*/
+    
 
 
 	.price-table .column {
@@ -449,4 +532,18 @@ body{
 	.terms-table .column .item{
 		margin: 0;
 	}
+    
+    
+    
+    .footer-section .container .footer  {
+        transform: translateX(12%);
+    }
+    .footer-section .container .footer .item {
+        width: 50%;
+        margin-top: 30px;
+        float: left;
+        padding-top: 10px;
+    }
+
+    
 }

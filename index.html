@@ -22,15 +22,21 @@
   <body>
 
   	<header>
-  		<div class="container">
-  				<nav class="navbar">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-nav" aria-controls="toggle-nav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<a class="navbar-brand" href="#"><img id="logo" src="assets/img/logo.png"></a>
-					
-					<div class="ml-auto phone-num"><p>+11 235 813 2134</p></div>
-					<a href="#" class="login"><img src="assets/img/login-icon.png"></a>
+  		<div class="container-fluid">
+  				<nav class="navbar row">
+                         <div class="col-sm-6 menu">
+                             
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-nav" aria-controls="toggle-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img id="logo" src="assets/img/logo.png"></a>
+                         </div>
+  				       <div class="col-sm-6 phone">
+  				           <div class="phone-num"><p>+11 235 813 2134</p></div>
+                            <a href="#" class="login"><img src="assets/img/login-icon.png"></a>
+
+  				       </div>
+                        
 					
 				</nav>
 			 	<div class="collapse navbar-collapse" id="toggle-nav">
@@ -58,7 +64,7 @@
   			<div class="main-banner-text text-center">
   				<h2>Create your own photostory</h2>
 			  	<p>Make your photobook online</p>
-			  	<button>Make your photobook</button>	
+			  	<button class="button">Make your photobook</button>	
   			</div>
   		</div>
   	</section>
@@ -127,7 +133,7 @@
   				</div>
   			</div>
 
-  			<button class="main-button red-button">make your photobook</button>
+  			<button type="button" class="btn main-button red-button">make your photobook</button>
 
   		</div> <!-- end container -->
   	</section> <!-- end advantage section -->
@@ -325,50 +331,62 @@
   	<section class="main-section footer-section">
   		<div class="container">
   			<div class="row footer">
-  				<div class="col-md-3">
-  					
-  					<ul>
-  						<li><a href="">About us</a></li>
-  						<li><a href="">Career</a></li>
-  						<li><a href="">Help</a></li>
-  						<li><a href="">Press</a></li>
-  					</ul>
+  				<div class="col-sm-6 col-md-3">
+  					<div class="item">
+  					    
+                        <ul>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Press</a></li>
+                        </ul>
+  					</div>
 
   				</div>
 
-  				<div class="col-md-3">
+  				<div class="col-sm-6 col-md-3">
+  					<div class="item">
+  					    <ul>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+  					</div>
   					
-  					<ul>
-  						<li><a href="">Terms</a></li>
-  						<li><a href="">Payment</a></li>
-  						<li><a href="">Shipping</a></li>
-  						<li><a href="">Contact</a></li>
-  					</ul>
 
   				</div>
 
-  				<div class="col-md-3">
+  				<div class="col-sm-6 col-md-3">
+  					<div class="item">
+  					    <ul>
+                            <li><a href="">LightBook</a></li>
+                            <li><a href="">ClassicBook</a></li>
+                            <li><a href="">PremiumBook</a></li>
+                        </ul>
+  					</div>
   					
-  					<ul>
-  						<li><a href="">LightBook</a></li>
-  						<li><a href="">ClassicBook</a></li>
-  						<li><a href="">PremiumBook</a></li>
-  					</ul>
 
   				</div>
-  				<div class="col-md-3 social-connect">
-  					
-  					<ul>
-  						<li><a href="">LightBook</a></li>
-  						<li><a href="">ClassicBook</a></li>
-  						<li><a href="">PremiumBook</a></li>
-  					</ul>
-
+  				<div class="col-sm-6 col-md-3 social-connect">
+  					<div class="item">
+                         <a href=""><i class="fa fa-facebook-square"></i></a>
+                         <a href=""><i class="fa fa-vk"></i></i></a>
+                         <a href=""><i class="fa fa-instagram"></i></i></a>
+  					    
+  					    <div id="xs-phone-num" class="phone-num"><p>+11 235 813 2134</p></div>
+  					   
+  					</div>
   				</div>
+  				
   			</div>
   			
-
+           <div class="copyright text-center">
+               <p>&copy; 2017 PC LAB</p>
+           </div>
+        
   		</div> <!-- end container -->
+  		
   	</section> <!-- end footer section -->
 
 
