@@ -155,6 +155,15 @@ body{
 	margin: auto 10px;
 }
 
+
+.advantage .item .image img {
+	width: 90%;
+	transition: width 1s;
+}
+.advantage .item .image img:hover {
+	width: 100%;
+}
+
 .advantage .item h4 span{
 	display: block;
 }
@@ -168,7 +177,7 @@ body{
 	font-size: 26px;
 	font-weight: 300;
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
 	border: none;
 	border-radius: 10px;
 	padding: 10px 30px;
@@ -177,6 +186,7 @@ body{
 
 .red-button {
 	background-color: #e11a27;
+	color: #fff;
 }
 
 
@@ -337,7 +347,6 @@ body{
 
 .testimonials-button {
     background-color: transparent;
-    color: #000;
     border: 1px solid #000;
     margin-top: 20%;
 }
@@ -434,6 +443,10 @@ body{
 }
 .footer-section .footer div ul a{
     color: #000;
+    text-decoration: none;
+}
+.footer-section .footer div ul a:hover, .footer-section .footer div ul a:focus{
+    font-weight: bold;
 }
 
 .footer-section .footer .social-connect .item{
