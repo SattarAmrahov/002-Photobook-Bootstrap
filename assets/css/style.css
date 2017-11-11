@@ -120,7 +120,23 @@ body{
 
 .section-two .item{
 	padding: 50px 0;
+	position: relative;
 }
+
+.section-two .item:after{
+	content: "";
+	height: 2px;
+	border-top: 2px dashed #ffd200;
+	width: 50%;
+	position: absolute;
+	top: 36%;
+	left: 75%;
+	right: 0;
+}
+.section-two .item:last-child:after{
+	display: none;
+}
+
 .section-two .item p{
 	padding: 10px 0;
 	line-height: 18px;
@@ -152,16 +168,29 @@ body{
 }
 
 .advantage .item{
-	margin: auto 10px;
+	margin: 10px 0;
+	padding: 0 20px;
+
+}
+
+.advantage .item .image{
+	border-radius: 100%;
+	overflow: hidden;
+  	position: relative;
 }
 
 
 .advantage .item .image img {
-	width: 90%;
-	transition: width 1s;
+  width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.5s;
 }
 .advantage .item .image img:hover {
-	width: 100%;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .advantage .item h4 span{
@@ -193,8 +222,14 @@ body{
 
 
 .price-table .column{
+	max-width: 100%;
 	padding: 0;
 	margin: 0;
+	transition: all 0.5s;
+	position: relative;
+}
+.price-table .column:hover {
+	transform: scale(1.1);
 }
 
 .price-table .column .item {
@@ -464,6 +499,7 @@ body{
 
 .copyright {
     margin-top: 50px;
+    transform: translateY(150%);
 }
 
 
@@ -517,19 +553,43 @@ body{
   .navbar .menu, .navbar .phone {
         width: 50%;
     }  
+
+	.section-two .item .image{
+		height: 200px;
+		width: 200px;
+		border: 3px solid #ffd200;
+		border-radius: 100%;
+		margin: 0 auto;
+	}
+
+	.section-two .item .image img{
+		position: relative;
+		margin: 30% 20%;
+	    width: 50%;
+	}
+
+
+    .section-two .item:after{
+		display: none;
+	}
+
+
+	.advantage .item{
+		margin-top: 30px;
+
+	}
+
+
+	.price-table, .terms-table {
+		margin: 20px 20px;
+	}
+
     
 }
 
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    /*[class*="col-"] {
-        width: 100%;
-    }*/
-    
-
-
-	.price-table .column {
+   	.price-table .column {
 		margin: 20px 0;
 	}
 
@@ -546,8 +606,6 @@ body{
 		margin: 0;
 	}
     
-    
-    
     .footer-section .container .footer  {
         transform: translateX(12%);
     }
@@ -556,7 +614,28 @@ body{
         margin-top: 30px;
         float: left;
         padding-top: 10px;
-    }
-
-    
+    }   
+	.section-two .container .row .item:after {
+		width: 56%;
+		left: 72%;
+	}
+    .section-two .item:nth-child(2):after{
+		display: none;
+	}
 }
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+	.section-two .item:after{
+		width: 20%;
+		left: 90%;
+	}
+} 
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+	.section-two .item:after{
+		width: 40%;
+		left: 80%;
+	}
+} 
